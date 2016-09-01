@@ -1,0 +1,86 @@
+.sim-slide ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.sim-slide {
+	position: relative;
+	overflow: hidden;
+}
+
+.sim-slide ul.sim-slide-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+}
+
+.sim-slide ul.sim-slide-wrapper li {
+	position: absolute;
+}
+
+.sim-slide .sim-prev, .sim-slide .sim-next {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 35px;
+	height: 70px;
+	margin-top: -35px;
+	border-radius: 3px;
+	opacity: .15;
+	background: red;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	transition: opacity .2s linear 0s;
+}
+
+.sim-slide .sim-prev {
+	left: 5px;
+	background: url(../images/arrow-left.png) #000 50% no-repeat;
+}
+
+.sim-slide .sim-next {
+	right: 5px;
+	background: url(../images/arrow-right.png) #000 50% no-repeat;
+}
+
+.sim-slidebox {
+	position: absolute;
+	left: 50%;
+	bottom: 12px;
+	z-index: 30;
+}
+
+.sim-slidebox ul {
+	height: 20px;
+	padding: 0 4px;
+	border-radius: 8px;
+	background: rgba(0,0,0,0.5);
+}
+
+.sim-slidebox ul li {
+	float: left;
+	height: 12px;
+	margin: 4px 4px;
+}
+
+.sim-slidebox ul li em {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background-color: #fff;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.sim-slidebox ul li.current em {
+	background-color: #fe6500;
+}
+
+.sim-slidebox ul li em:hover {
+	background-color: #fe6500;
+}
