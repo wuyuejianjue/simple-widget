@@ -107,7 +107,7 @@
        
         $(this).find('.sim-slidebox li').removeClass('current');
         $(this).find('.sim-slidebox li').eq(show).addClass('current');
-    }
+    }      
     $.fn.simSlide.opts = {
         autoPlay: false,
         dir: null,
