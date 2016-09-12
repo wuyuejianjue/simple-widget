@@ -1,4 +1,4 @@
-(function($){
+(function($){ 
     $.fn.simSlide = function(opts){
         opts = $.extend({}, $.fn.simSlide.opts, opts);
         this.each(function(){
