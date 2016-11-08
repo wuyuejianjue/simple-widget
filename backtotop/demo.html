@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Back to top demo</title>
+  <style>
+  #back-to-top {
+    display: none;
+    width: 100px;
+    line-height: 1.2;
+    padding: 5px 0;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    _position: absolute;
+    right: 10px;
+    bottom: 100px;
+    _bottom: "auto";
+    cursor: pointer;
+    opacity: .6;
+    filter: Alpha(opacity=60);
+  }
+  </style>
+</head>
+<body>
+  <header><h1>Back to top demo</h1></header>
+    <div id="random-txt">
+    </div>
+  <section>
+
+  </section>
+  <!-- end of content -->
+
+  <footer>
+
+  </footer>
+
+  <div id="back-to-top"></div>
+  <script src="jquery.js"></script>
+  <script type="text/javascript" src="backtotop.js"></script>
+  <script>
+  for (var i = 0; i < 100; i+=1 ) {
+  $('#random-txt').append('<p>Test</p>');
+  }
+  $('#back-to-top').backtotop();
+  </script>
+  </body>
+</html>
