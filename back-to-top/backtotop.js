@@ -1,6 +1,6 @@
 ;(function( $, window, document, undefined ) {
 	var pluginName = 'backtotop',
-		defaults = {
+		defaults = { 
 			backToTopTxt: "back to top"
 		};
 
